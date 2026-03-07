@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi web portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+<div class="contenedor-principal">
+        
+        <aside class="columna-izquierda">
+            <div class="cabecera-cursos">
+                <h2>Cursos oficiales / Certificados</h2>
+            </div>
+            
+            <div class="lista-botones" id="contenedor-cursos">
+                </div>
+        </aside>
+
+        <main class="zona-central">
+            
+            <header class="perfil-header">
+                <div class="perfil-bio">
+                    <div class="foto-perfil">
+                        <img src="Logos/foto.jpg" alt="Foto de Perfil" class="foto-redonda-bio">
+                    </div>
+                    <div class="info-bio">
+                        <h1 id="nombre-usuario">Ruth López Pellicer</h1>
+                        <p id="email-usuario">ruth.lopez.pellicer@gmail.com</p>
+                            <div class="enlaces-bio">
+                                <a href="https://www.linkedin.com/in/ruthlopezpellicer" target="_blank">LinkedIn</a>
+                                <a href="https://github.com/ruthlessallen" target="_blank">GitHub</a>
+                            </div>
+                    </div>
+                </div>
+                
+                <div class="carrusel-principal">
+                    <p class="titulo-carrusel">Habilidades </p>
+                    <div class="habilidades-lista" id="contenedor-habilidades-globales"></div>
+                </div>
+            </header>
+
+            <section class="dashboard" id="zona-drop" ondragover="event.preventDefault()" ondrop="manejarDrop(event)">
+                <button id="btn-limpiar">
+                    <img src="Logos\limpiar.png" alt="Limpiar" class="icono-btn">
+                    Limpiar
+                </button>
+                <p class="instruccion">Arrastra (o haz click en) un elemento para ver los detalles</p>
+                <div id="contenedor-tarjeta-activa">
+                    </div>
+            </section>
+        </main>
+
+        <aside class="columna-derecha">
+            <div class="cabecera-github">
+                <h2>GitHub</h2>
+            </div>
+            
+            <div class="lista-botones" id="contenedor-proyectos">
+                </div>
+        </aside>
+
+        <footer class="zona-laboral">
+            <h2>Experiencias laborales</h2>
+            
+            <div class="lista-laboral" id="contenedor-experiencias">
+                </div>
+        </footer>
+
+    </div>
+
+    <script src="portfolio.js"></script>
+</body>
+</html>
