@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi web portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="portfolio.css">
 </head>
 <body>
@@ -21,7 +24,11 @@
         <main class="zona-central">
             
             <header class="perfil-header">
-                <div class="perfil-bio">
+                <div class="perfil-bio"id="perfil-ruth" 
+                        draggable="true" 
+                        onclick="mostrarDetalle('perfil-ruth', 'perfil')" 
+                        ondragstart="event.dataTransfer.setData('text/plain', 'perfil-ruth|perfil')"
+                        style="cursor: grab;"> 
                     <div class="foto-perfil">
                         <img src="Logos/foto.jpg" alt="Foto de Perfil" class="foto-redonda-bio">
                     </div>
@@ -43,7 +50,7 @@
 
             <section class="dashboard" id="zona-drop" ondragover="event.preventDefault()" ondrop="manejarDrop(event)">
                 <button id="btn-limpiar">
-                    <img src="Logos\limpiar.png" alt="Limpiar" class="icono-btn">
+                    <img src="Logos/limpiar.png" alt="Limpiar" class="icono-btn">
                     Limpiar
                 </button>
                 <p class="instruccion">Arrastra (o haz click en) un elemento para ver los detalles</p>
