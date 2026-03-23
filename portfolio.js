@@ -70,7 +70,7 @@ const proyectos = [
         descripcion: "Este proyecto de SQL trata los datos scrappeados de Kaggle, los limpia y genera una base de datos relacional de estrella."+
         "Con estos datos puedo responder a ciertas preguntas de negocio relacionadas con los productos (calidad, consumo, ratings) como con la clientela que comenta.", 
         habilidades: ["hab-css", "hab-html", "hab-vsc"], 
-        captura: "Capturas-proyectos/proyecto_3_dioramantra.png"
+        captura: "Capturas-proyectos/proyecto_4_sephora.png"
     }
 ];
 
