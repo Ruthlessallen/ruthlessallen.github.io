@@ -57,6 +57,18 @@ const proyectos = [
         descripcion: "Este es un trabajo de la asignatura de lenguaje de marcas en mi FP de DAM. Una de las cosas que más me han ayudado a trabajar la paciencia ha sido hacer dioramas."+
         "Los dioramas son maquetas que se construyen poco a poco, y pueden ser diy o prehechas para que solo se tenga que montar."+
         "En este caso, quería hacer una web alegre y que cumpliesen con los requisitos de la asignatura. En esta web estática la idea es simular la página principal de una tienda online.", 
+        habilidades: ["hab-beaver", "hab-sql"], 
+        captura: "Capturas-proyectos/proyecto_4_sephora.png"
+    }, 
+        {
+        id: "proyecto-sephora", 
+        nombre: "Pipeline SQL sobre productos y reviews de Sephora", 
+        institucion: "Evolve", 
+        fecha: "Marzo 2026", 
+        logo: 'Logos/github.png',
+        link: "https://github.com/Ruthlessallen/Project-Sephora-Products-and-Reviews", 
+        descripcion: "Este proyecto de SQL trata los datos scrappeados de Kaggle, los limpia y genera una base de datos relacional de estrella."+
+        "Con estos datos puedo responder a ciertas preguntas de negocio relacionadas con los productos (calidad, consumo, ratings) como con la clientela que comenta.", 
         habilidades: ["hab-css", "hab-html", "hab-vsc"], 
         captura: "Capturas-proyectos/proyecto_3_dioramantra.png"
     }
@@ -89,7 +101,7 @@ const cursos = [
         descripcion: "Cursando actualmente máster de data science e IA. En este curso estoy aprendiendo: Python, arquitectura de software, control de versiones, SQL y bases de datos, data science stadistics, análisis y visualizacion de datos, Machine Learning, Deep Learning, IA generativa y MLOps.", 
         logo : 'Logos/evolve.png',
         habilidades: ["hab-python","hab-sql","hab-git", "hab-jupyter", "hab-pandas","hab-mlp",  "hab-seaborn","hab-beaver","hab-powerbi"],
-        proyectoRelacionado: "proyecto-1-EDA"
+        proyectoRelacionado: ["proyecto-1-EDA", "proyecto-sephora"]
     },
     { 
         id: "curso-ucademy", 
