@@ -57,8 +57,8 @@ const proyectos = [
         descripcion: "Este es un trabajo de la asignatura de lenguaje de marcas en mi FP de DAM. Una de las cosas que más me han ayudado a trabajar la paciencia ha sido hacer dioramas."+
         "Los dioramas son maquetas que se construyen poco a poco, y pueden ser diy o prehechas para que solo se tenga que montar."+
         "En este caso, quería hacer una web alegre y que cumpliesen con los requisitos de la asignatura. En esta web estática la idea es simular la página principal de una tienda online.", 
-        habilidades: ["hab-beaver", "hab-sql"], 
-        captura: "Capturas-proyectos/proyecto_4_sephora.png"
+        habilidades: ["hab-css", "hab-html", "hab-vsc"], 
+        captura: "Capturas-proyectos/proyecto_3_dioramantra.png"
     }, 
         {
         id: "proyecto-sephora", 
@@ -69,7 +69,7 @@ const proyectos = [
         link: "https://github.com/Ruthlessallen/Project-Sephora-Products-and-Reviews", 
         descripcion: "Este proyecto de SQL trata los datos scrappeados de Kaggle, los limpia y genera una base de datos relacional de estrella."+
         "Con estos datos puedo responder a ciertas preguntas de negocio relacionadas con los productos (calidad, consumo, ratings) como con la clientela que comenta.", 
-        habilidades: ["hab-css", "hab-html", "hab-vsc"], 
+        habilidades: ["hab-beaver", "hab-sql"], 
         captura: "Capturas-proyectos/proyecto_4_sephora.png"
     }
 ];
