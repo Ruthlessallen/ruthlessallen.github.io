@@ -201,7 +201,15 @@ function mostrarDetalle(id, tipo) {
     }
     if (!d) return;
     quitarBrillos();
-    if (d.proyectoRelacionado) document.getElementById(d.proyectoRelacionado)?.classList.add("brillo-github");
+    if (d.proyectoRelacionado) {
+    const listaProyectos = Array.isArray(d.proyectoRelacionado) 
+        ? d.proyectoRelacionado 
+        : [d.proyectoRelacionado];
+    listaProyectos.forEach(idProyecto => {
+        const el = document.getElementById(idProyecto);
+        if (el) el.classList.add("brillo-github");
+    });
+}
     if (tipo === 'perfil') {
         contenedor.innerHTML += `
             <article class="tarjeta-detalle tarjeta-perfil-especial">
