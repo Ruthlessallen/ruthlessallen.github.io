@@ -18,11 +18,24 @@ const habilidades = [
     { id: "hab-excel", nombre: "Excel", logo: 'Logos/excel.png' },
     { id: "hab-antigravity", nombre: "Antigravity", logo: 'Logos/antigravity.jpg' },
     { id: "hab-scikit", nombre: "Scikit-learn", logo: 'Logos/scikit.png' },
-    { id: "hab-fastapi", nombre: "FastAPI", logo: 'Logos/FastAPI.png' }
 ];
 
 // Tarjetas de proyectos de github
 const proyectos = [
+    {
+        id: "proyecto-carmen-care",
+        nombre: "Carmen Care — Copiloto de IA para residencias (TFM)",
+        institucion: "Evolve · Trabajo Fin de Máster",
+        fecha: "Agosto 2026",
+        logo: 'Logos/github.png',
+        link: "https://github.com/Ruthlessallen/Trabajo-Fin-Master",
+        descripcion: "Copiloto de inteligencia artificial para técnicos en actividades socioculturales (TASOC) y terapeutas ocupacionales en residencias de personas mayores. " +
+            "Grafo de estados agéntico con LangGraph (evaluación meteorológica → razonamiento con Gemini → scoring de afinidad → generación de guías técnicas), integrado con la API pública real de AEMET y con persistencia atómica en disco. " +
+            "Incluye gestión de residentes, registro de participación y exportación de guías técnicas a DOCX/PDF. " +
+            "El propio repo incluye una autoauditoría técnica en la que detecté y corregí un bug crítico en el grafo de decisión.",
+        habilidades: ["hab-python", "hab-git", "hab-jupyter"],
+        glowClass: "brillo-python"
+    },
     {
         id: "proyecto-1-EDA",
         nombre: "Proyecto EDA sobre compra en Barcelona a través de Idealista (2024)",
@@ -125,6 +138,45 @@ const proyectos = [
         descripcion: "Diseño y desarrollo de un panel interactivo integrado para el seguimiento de métricas clave de rendimiento (ADR, RevPAR, tasa de ocupación y previsión de demanda) a partir de más de 119.000 reservas. Conexión de fuentes de datos heterogéneas, modelado dimensional eficiente y visualizaciones interactivas de indicadores clave para la toma de decisiones comerciales.",
         habilidades: ["hab-powerbi", "hab-excel"],
         glowClass: "brillo-powerbi"
+    },
+    {
+        id: "proyecto-vadeviajes",
+        nombre: "Vadeviajes — landing dinámica de captación",
+        institucion: "Cliente real",
+        fecha: "2026",
+        logo: 'Logos/github.png',
+        link: "https://vadeviajes.netlify.app/",
+        linkLabel: "Ver la demo",
+        descripcion: "Interfaz de entrada que sustituye la experiencia de un CRM de agencia de viajes: mapa interactivo por países, selector de fechas multi-paso, contadores de viajeros y formulario en tres pasos con previsualización. " +
+            "Backend sin servidor en Google Apps Script: las solicitudes se guardan en Google Sheets y disparan avisos por correo y WhatsApp. " +
+            "Bilingüe completo (ES/EN) con persistencia de idioma, páginas legales en ambos idiomas y gestor de cookies conforme al RGPD.",
+        habilidades: ["hab-html", "hab-css", "hab-js", "hab-git"],
+        captura: 'Capturas-proyectos/proyecto_8_vadeviajes.png',
+        glowClass: "brillo-web"
+    },
+    {
+        id: "proyecto-chatbot-convenios",
+        nombre: "Asistente RAG sobre convenios colectivos",
+        institucion: "Evolve · Proyecto final IA Generativa",
+        fecha: "2026",
+        logo: 'Logos/github.png',
+        link: "https://github.com/Ruthlessallen/Chatbot-convenio-despachos-y-oficinas",
+        descripcion: "Chatbot experto en convenios y tablas salariales del sector de oficinas y despachos, con arquitectura RAG orquestada mediante LangGraph, base de datos vectorial persistente en ChromaDB y embeddings de HuggingFace. " +
+            "Sistema híbrido multiproveedor: Gemini como modelo principal y OpenAI como respaldo automático ante fallo o límite de cuota. " +
+            "Desplegado y accesible públicamente en Streamlit: chatbot-convenio-despachos-y-oficinas.streamlit.app",
+        habilidades: ["hab-python", "hab-git", "hab-jupyter"],
+        glowClass: "brillo-python"
+    },
+    {
+        id: "proyecto-eda-hoteles-valencia",
+        nombre: "EDA del alojamiento turístico en Valencia",
+        institucion: "GitHub",
+        fecha: "2026",
+        logo: 'Logos/github.png',
+        link: "https://github.com/Ruthlessallen/eda-hoteles-y-apartamentos-valencia",
+        descripcion: "Scraping propio de datos de hoteles y apartamentos turísticos en Valencia, con pipeline modular de limpieza (cleaning, features, viz) y análisis exploratorio del mercado de alojamiento de la ciudad.",
+        habilidades: ["hab-python", "hab-pandas", "hab-jupyter", "hab-git"],
+        glowClass: "brillo-python"
     }
 ];
 
@@ -133,7 +185,8 @@ const infoPersonal = {
     id: "perfil-ruth",
     nombre: "Ruth López Pellicer",
     foto: "Logos/foto.jpg",
-    bio: "Tras años trabajando en hostelería en mi trabajo de recepcionista de hotel me di cuenta de que me era más mentalmente estimulante y divertido solucionar problemas tecnológicos.\n" +
+    bio: "Desarrolladora web y Python, con foco en aplicaciones conectadas a bases de datos, automatización y proyectos con IA integrada. Trabajo también como QA de datos en Sewdef y hago proyectos freelance en paralelo.\n" +
+        "Tras años trabajando en hostelería en mi trabajo de recepcionista de hotel me di cuenta de que me era más mentalmente estimulante y divertido solucionar problemas tecnológicos.\n" +
         "Siempre he tenido una mente curiosa y con capacidad de resolución ante cualquier situación problemática, una mente organizativa, buscando la eficacia ante una tarea. \n" +
         "Mis años trabajando en un hotel o en restaurantes me han dado la visión que tengo hoy en día de trabajo en equipo y manejo de la frustración, así que lo uso en mi favor en este nuevo rumbo hacia la programación.\n",
     curiosidades: ["Me encantan los escape rooms, los puzzles y acertijos, cuanto más me haga estrujar el cerebro, mejor.",
@@ -155,8 +208,8 @@ const cursos = [
         fechas: "2026 - actualidad",
         descripcion: "Cursando actualmente máster de data science e IA. En este curso estoy aprendiendo: Python, arquitectura de software, control de versiones, SQL y bases de datos, data science stadistics, análisis y visualizacion de datos, Machine Learning, Deep Learning, IA generativa y MLOps.",
         logo: 'Logos/evolve.png',
-        habilidades: ["hab-python", "hab-sql", "hab-git", "hab-jupyter", "hab-pandas", "hab-mlp", "hab-seaborn", "hab-beaver", "hab-powerbi", "hab-antigravity", "hab-scikit", "hab-fastapi"],
-        proyectoRelacionado: ["proyecto-1-EDA", "proyecto-sephora", "proyecto-nlp", "proyecto-ml", "proyecto-powerbi-hotel"]
+        habilidades: ["hab-python", "hab-sql", "hab-git", "hab-jupyter", "hab-pandas", "hab-mlp", "hab-seaborn", "hab-beaver", "hab-powerbi", "hab-antigravity", "hab-scikit"],
+        proyectoRelacionado: ["proyecto-carmen-care", "proyecto-1-EDA", "proyecto-sephora", "proyecto-nlp", "proyecto-ml", "proyecto-powerbi-hotel", "proyecto-chatbot-convenios", "proyecto-eda-hoteles-valencia"]
     },
     {
         id: "curso-ucademy",
@@ -184,10 +237,10 @@ const cursos = [
 const laboral = [
     {
         id: "sewdef",
-        nombre: "Data quality assurance (QA) specialist",
+        nombre: "Data QA & Labeling Specialist (visión por computador)",
         empresa: "Sewdef",
         fecha: "Mayo 2026 - actualidad",
-        descripcion: "Detección de anomalías en flujos masivos de datos para plataformas de inteligencia artificial. Elaboración de informes de calidad, auditoría de datos en bases de datos relacionales y propuestas de automatización de pruebas mediante scripts de validación, garantizando la fiabilidad de los indicadores.",
+        descripcion: "Control de calidad de un motor de IA/ML que detecta defectos en vídeos de inspección de alcantarillado: reviso si las detecciones automáticas del modelo están correctamente identificadas y hago labeling de imágenes para alimentar y reentrenar la propia IA.",
         logo: 'Logos/sewdef.png',
         habilidades: ["hab-python", "hab-sql", "hab-git"]
     },
@@ -315,7 +368,7 @@ function mostrarDetalle(id, tipo) {
                     <img src="${d.logo || 'Logos/github.png'}" class="logo-detalle-centrado">
                     <h3>${d.nombre}</h3>
                     <p>${d.fechas || d.fecha}</p>
-                    ${d.link ? `<a href="${d.link}" target="_blank" class="link-proyecto">Ver en GitHub</a>` : ''}
+                    ${d.link ? `<a href="${d.link}" target="_blank" class="link-proyecto">${d.linkLabel || 'Ver en GitHub'}</a>` : ''}
                 </div>
                 <div class="detalle-der">
                     <div class="mini-habilidades">
